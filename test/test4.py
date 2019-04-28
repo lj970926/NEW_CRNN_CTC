@@ -1,0 +1,2 @@
+a = "sasdfsad"
+a.strip()
