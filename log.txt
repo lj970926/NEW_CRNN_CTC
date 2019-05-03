@@ -1,0 +1,203 @@
+step:100 learning_rate= 0.100000 ctc_loss=17.181931 sequence_distance= 0.978693 train_accuracy= 0.005208
+step:200 learning_rate= 0.100000 ctc_loss=19.667343 sequence_distance= 0.974179 train_accuracy= 0.006944
+step:300 learning_rate= 0.100000 ctc_loss=12.516271 sequence_distance= 0.984776 train_accuracy= 0.004808
+step:400 learning_rate= 0.100000 ctc_loss=18.827942 sequence_distance= 0.969523 train_accuracy= 0.000000
+step:500 learning_rate= 0.100000 ctc_loss=14.647200 sequence_distance= 0.954708 train_accuracy= 0.000000
+step:600 learning_rate= 0.100000 ctc_loss=15.709935 sequence_distance= 0.960689 train_accuracy= 0.000000
+step:700 learning_rate= 0.100000 ctc_loss=18.412294 sequence_distance= 0.943155 train_accuracy= 0.000000
+step:800 learning_rate= 0.100000 ctc_loss=15.336269 sequence_distance= 0.965030 train_accuracy= 0.000000
+step:900 learning_rate= 0.100000 ctc_loss=15.951204 sequence_distance= 0.895585 train_accuracy= 0.010417
+step:1000 learning_rate= 0.100000 ctc_loss=18.914448 sequence_distance= 0.939906 train_accuracy= 0.000000
+step:1100 learning_rate= 0.080000 ctc_loss=14.385012 sequence_distance= 0.988636 train_accuracy= 0.000000
+step:1200 learning_rate= 0.080000 ctc_loss=12.766314 sequence_distance= 0.874926 train_accuracy= 0.027083
+step:1300 learning_rate= 0.080000 ctc_loss=13.980540 sequence_distance= 0.939931 train_accuracy= 0.000000
+step:1400 learning_rate= 0.080000 ctc_loss=14.531689 sequence_distance= 0.849574 train_accuracy= 0.062973
+step:1500 learning_rate= 0.080000 ctc_loss=13.567204 sequence_distance= 0.821181 train_accuracy= 0.023438
+step:1600 learning_rate= 0.080000 ctc_loss=10.939522 sequence_distance= 0.771280 train_accuracy= 0.085417
+step:1700 learning_rate= 0.080000 ctc_loss=14.442077 sequence_distance= 0.784483 train_accuracy= 0.026515
+step:1800 learning_rate= 0.080000 ctc_loss= 7.906079 sequence_distance= 0.581250 train_accuracy= 0.177778
+step:1900 learning_rate= 0.080000 ctc_loss=14.432024 sequence_distance= 0.754167 train_accuracy= 0.072917
+step:2000 learning_rate= 0.080000 ctc_loss= 8.606985 sequence_distance= 0.644792 train_accuracy= 0.064583
+step:2100 learning_rate= 0.064000 ctc_loss= 8.408362 sequence_distance= 0.523810 train_accuracy= 0.148313
+step:2200 learning_rate= 0.064000 ctc_loss= 8.285039 sequence_distance= 0.540104 train_accuracy= 0.250000
+step:2300 learning_rate= 0.064000 ctc_loss=10.851302 sequence_distance= 0.488492 train_accuracy= 0.241319
+step:2400 learning_rate= 0.064000 ctc_loss= 9.165815 sequence_distance= 0.587500 train_accuracy= 0.180357
+step:2500 learning_rate= 0.064000 ctc_loss= 8.891643 sequence_distance= 0.472049 train_accuracy= 0.318924
+step:2600 learning_rate= 0.064000 ctc_loss= 6.087839 sequence_distance= 0.379687 train_accuracy= 0.303125
+step:2700 learning_rate= 0.064000 ctc_loss= 5.951113 sequence_distance= 0.313880 train_accuracy= 0.465774
+step:2800 learning_rate= 0.064000 ctc_loss= 4.184641 sequence_distance= 0.203125 train_accuracy= 0.677083
+step:2900 learning_rate= 0.064000 ctc_loss= 5.050024 sequence_distance= 0.194320 train_accuracy= 0.574901
+step:3000 learning_rate= 0.064000 ctc_loss= 3.319916 sequence_distance= 0.046334 train_accuracy= 0.886905
+step:3100 learning_rate= 0.051200 ctc_loss= 1.800618 sequence_distance= 0.140625 train_accuracy= 0.859375
+step:3200 learning_rate= 0.051200 ctc_loss= 2.858069 sequence_distance= 0.129315 train_accuracy= 0.784375
+step:3300 learning_rate= 0.051200 ctc_loss= 2.214462 sequence_distance= 0.054640 train_accuracy= 0.945360
+step:3400 learning_rate= 0.051200 ctc_loss= 2.724360 sequence_distance= 0.092014 train_accuracy= 0.798611
+step:3500 learning_rate= 0.051200 ctc_loss= 3.263854 sequence_distance= 0.098512 train_accuracy= 0.873710
+step:3600 learning_rate= 0.051200 ctc_loss= 1.589397 sequence_distance= 0.039062 train_accuracy= 0.921875
+step:3700 learning_rate= 0.051200 ctc_loss= 2.221414 sequence_distance= 0.059028 train_accuracy= 0.909722
+step:3800 learning_rate= 0.051200 ctc_loss= 1.303969 sequence_distance= 0.028646 train_accuracy= 0.971354
+step:3900 learning_rate= 0.051200 ctc_loss= 1.198856 sequence_distance= 0.052083 train_accuracy= 0.916667
+step:4000 learning_rate= 0.051200 ctc_loss= 0.715990 sequence_distance= 0.015625 train_accuracy= 0.984375
+step:4100 learning_rate= 0.040960 ctc_loss= 1.087635 sequence_distance= 0.130208 train_accuracy= 0.838542
+step:4200 learning_rate= 0.040960 ctc_loss= 0.755194 sequence_distance= 0.031250 train_accuracy= 0.937500
+step:4300 learning_rate= 0.040960 ctc_loss= 2.903008 sequence_distance= 0.090751 train_accuracy= 0.893624
+step:4400 learning_rate= 0.040960 ctc_loss= 0.629639 sequence_distance= 0.020833 train_accuracy= 0.979167
+step:4500 learning_rate= 0.040960 ctc_loss= 0.989946 sequence_distance= 0.041667 train_accuracy= 0.937500
+step:4600 learning_rate= 0.040960 ctc_loss= 0.842002 sequence_distance= 0.087054 train_accuracy= 0.912946
+step:4700 learning_rate= 0.040960 ctc_loss= 0.805949 sequence_distance= 0.048611 train_accuracy= 0.909722
+step:4800 learning_rate= 0.040960 ctc_loss= 0.701455 sequence_distance= 0.062500 train_accuracy= 0.937500
+step:4900 learning_rate= 0.040960 ctc_loss= 0.265297 sequence_distance= 0.000000 train_accuracy= 1.000000
+step:5000 learning_rate= 0.040960 ctc_loss= 1.314636 sequence_distance= 0.085938 train_accuracy= 0.914062
+step:5100 learning_rate= 0.032768 ctc_loss= 1.045196 sequence_distance= 0.041146 train_accuracy= 0.925521
+step:5200 learning_rate= 0.032768 ctc_loss= 0.903342 sequence_distance= 0.040179 train_accuracy= 0.928571
+step:5300 learning_rate= 0.032768 ctc_loss= 1.796844 sequence_distance= 0.046875 train_accuracy= 0.931250
+step:5400 learning_rate= 0.032768 ctc_loss= 0.654542 sequence_distance= 0.031250 train_accuracy= 0.968750
+step:5500 learning_rate= 0.032768 ctc_loss= 0.491664 sequence_distance= 0.022917 train_accuracy= 0.977083
+step:5600 learning_rate= 0.032768 ctc_loss= 1.240125 sequence_distance= 0.093750 train_accuracy= 0.906250
+step:5700 learning_rate= 0.032768 ctc_loss= 0.604671 sequence_distance= 0.083333 train_accuracy= 0.916667
+step:5800 learning_rate= 0.032768 ctc_loss= 0.351162 sequence_distance= 0.010417 train_accuracy= 0.989583
+step:5900 learning_rate= 0.032768 ctc_loss= 0.523597 sequence_distance= 0.006944 train_accuracy= 0.993056
+WARNING:tensorflow:From /home/lijin/anaconda3/envs/tensor/lib/python3.7/site-packages/tensorflow/python/training/saver.py:966: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+step:6000 learning_rate= 0.032768 ctc_loss= 0.600781 sequence_distance= 0.008929 train_accuracy= 0.991071
+step:6100 learning_rate= 0.026214 ctc_loss= 0.833100 sequence_distance= 0.018182 train_accuracy= 0.981818
+step:6200 learning_rate= 0.026214 ctc_loss= 1.119751 sequence_distance= 0.111111 train_accuracy= 0.868056
+step:6300 learning_rate= 0.026214 ctc_loss= 1.709656 sequence_distance= 0.067708 train_accuracy= 0.911458
+step:6400 learning_rate= 0.026214 ctc_loss= 0.321334 sequence_distance= 0.007812 train_accuracy= 0.992188
+step:6500 learning_rate= 0.026214 ctc_loss= 0.830359 sequence_distance= 0.052083 train_accuracy= 0.947917
+step:6600 learning_rate= 0.026214 ctc_loss= 0.561906 sequence_distance= 0.016667 train_accuracy= 0.983333
+step:6700 learning_rate= 0.026214 ctc_loss= 0.176259 sequence_distance= 0.020833 train_accuracy= 0.958333
+step:6800 learning_rate= 0.026214 ctc_loss= 0.527087 sequence_distance= 0.029762 train_accuracy= 0.991071
+step:6900 learning_rate= 0.026214 ctc_loss= 0.371680 sequence_distance= 0.031250 train_accuracy= 0.937500
+step:7000 learning_rate= 0.026214 ctc_loss= 0.482130 sequence_distance= 0.031250 train_accuracy= 0.968750
+step:7100 learning_rate= 0.020972 ctc_loss= 1.598672 sequence_distance= 0.038194 train_accuracy= 0.953993
+step:7200 learning_rate= 0.020972 ctc_loss= 0.215039 sequence_distance= 0.000000 train_accuracy= 1.000000
+step:7300 learning_rate= 0.020972 ctc_loss= 1.011649 sequence_distance= 0.054167 train_accuracy= 0.939583
+step:7400 learning_rate= 0.020972 ctc_loss= 0.865446 sequence_distance= 0.078125 train_accuracy= 0.921875
+step:7500 learning_rate= 0.020972 ctc_loss= 0.208385 sequence_distance= 0.006944 train_accuracy= 0.993056
+step:7600 learning_rate= 0.020972 ctc_loss= 0.067228 sequence_distance= 0.000000 train_accuracy= 1.000000
+step:7700 learning_rate= 0.020972 ctc_loss= 0.271158 sequence_distance= 0.031250 train_accuracy= 0.968750
+step:7800 learning_rate= 0.020972 ctc_loss= 0.879282 sequence_distance= 0.033854 train_accuracy= 0.966146
+step:7900 learning_rate= 0.020972 ctc_loss= 0.424226 sequence_distance= 0.020833 train_accuracy= 0.958333
+step:8000 learning_rate= 0.020972 ctc_loss= 0.747301 sequence_distance= 0.052679 train_accuracy= 0.916071
+step:8100 learning_rate= 0.016777 ctc_loss= 0.821028 sequence_distance= 0.021875 train_accuracy= 0.971875
+step:8200 learning_rate= 0.016777 ctc_loss= 0.232994 sequence_distance= 0.015625 train_accuracy= 0.984375
+step:8300 learning_rate= 0.016777 ctc_loss= 0.423968 sequence_distance= 0.020833 train_accuracy= 0.979167
+step:8400 learning_rate= 0.016777 ctc_loss= 0.847707 sequence_distance= 0.031250 train_accuracy= 0.968750
+step:8500 learning_rate= 0.016777 ctc_loss= 0.378139 sequence_distance= 0.020833 train_accuracy= 0.979167
+step:8600 learning_rate= 0.016777 ctc_loss= 0.570469 sequence_distance= 0.009615 train_accuracy= 0.990385
+step:8700 learning_rate= 0.016777 ctc_loss= 0.379400 sequence_distance= 0.006944 train_accuracy= 0.993056
+step:8800 learning_rate= 0.016777 ctc_loss= 0.089237 sequence_distance= 0.000000 train_accuracy= 1.000000
+step:8900 learning_rate= 0.016777 ctc_loss= 0.654097 sequence_distance= 0.018750 train_accuracy= 0.981250
+step:9000 learning_rate= 0.016777 ctc_loss= 0.497617 sequence_distance= 0.020833 train_accuracy= 0.958333
+step:9100 learning_rate= 0.013422 ctc_loss= 1.424186 sequence_distance= 0.130208 train_accuracy= 0.869792
+step:9200 learning_rate= 0.013422 ctc_loss= 0.042127 sequence_distance= 0.000000 train_accuracy= 1.000000
+step:9300 learning_rate= 0.013422 ctc_loss= 0.711189 sequence_distance= 0.041667 train_accuracy= 0.958333
+step:9400 learning_rate= 0.013422 ctc_loss= 0.815616 sequence_distance= 0.027083 train_accuracy= 0.972917
+step:9500 learning_rate= 0.013422 ctc_loss= 0.066843 sequence_distance= 0.000000 train_accuracy= 1.000000
+step:9600 learning_rate= 0.013422 ctc_loss= 0.608872 sequence_distance= 0.029762 train_accuracy= 0.991071
+step:9700 learning_rate= 0.013422 ctc_loss= 0.040657 sequence_distance= 0.000000 train_accuracy= 1.000000
+step:9800 learning_rate= 0.013422 ctc_loss= 0.352028 sequence_distance= 0.031250 train_accuracy= 0.968750
+step:9900 learning_rate= 0.013422 ctc_loss= 0.309562 sequence_distance= 0.000000 train_accuracy= 1.000000
+step:10000 learning_rate= 0.013422 ctc_loss= 0.273523 sequence_distance= 0.012500 train_accuracy= 0.987500
+step:10100 learning_rate= 0.010737 ctc_loss= 0.890731 sequence_distance= 0.033333 train_accuracy= 0.960417
+step:10200 learning_rate= 0.010737 ctc_loss= 0.555571 sequence_distance= 0.041667 train_accuracy= 0.958333
+step:10300 learning_rate= 0.010737 ctc_loss= 0.378800 sequence_distance= 0.012500 train_accuracy= 0.987500
+step:10400 learning_rate= 0.010737 ctc_loss= 0.140041 sequence_distance= 0.000000 train_accuracy= 1.000000
+step:10500 learning_rate= 0.010737 ctc_loss= 0.198154 sequence_distance= 0.031250 train_accuracy= 0.968750
+step:10600 learning_rate= 0.010737 ctc_loss= 0.379645 sequence_distance= 0.022917 train_accuracy= 0.977083
+step:10700 learning_rate= 0.010737 ctc_loss= 0.645239 sequence_distance= 0.015625 train_accuracy= 0.984375
+step:10800 learning_rate= 0.010737 ctc_loss= 0.324138 sequence_distance= 0.021429 train_accuracy= 0.978571
+step:10900 learning_rate= 0.010737 ctc_loss= 0.524764 sequence_distance= 0.014062 train_accuracy= 0.979688
+step:11000 learning_rate= 0.010737 ctc_loss= 0.028999 sequence_distance= 0.000000 train_accuracy= 1.000000
+step:11100 learning_rate= 0.008590 ctc_loss= 0.321763 sequence_distance= 0.020833 train_accuracy= 0.979167
+step:11200 learning_rate= 0.008590 ctc_loss= 0.790386 sequence_distance= 0.040179 train_accuracy= 0.959821
+step:11300 learning_rate= 0.008590 ctc_loss= 0.298644 sequence_distance= 0.020833 train_accuracy= 0.979167
+step:11400 learning_rate= 0.008590 ctc_loss= 0.406816 sequence_distance= 0.009615 train_accuracy= 0.990385
+step:11500 learning_rate= 0.008590 ctc_loss= 0.294218 sequence_distance= 0.006944 train_accuracy= 0.993056
+step:11600 learning_rate= 0.008590 ctc_loss= 0.239345 sequence_distance= 0.062500 train_accuracy= 0.937500
+step:11700 learning_rate= 0.008590 ctc_loss= 0.347062 sequence_distance= 0.006250 train_accuracy= 0.993750
+step:11800 learning_rate= 0.008590 ctc_loss= 0.311193 sequence_distance= 0.020833 train_accuracy= 0.958333
+step:11900 learning_rate= 0.008590 ctc_loss= 0.701389 sequence_distance= 0.072917 train_accuracy= 0.895833
+step:12000 learning_rate= 0.008590 ctc_loss= 0.103772 sequence_distance= 0.000000 train_accuracy= 1.000000
+step:12100 learning_rate= 0.006872 ctc_loss= 0.078106 sequence_distance= 0.000000 train_accuracy= 1.000000
+step:12200 learning_rate= 0.006872 ctc_loss= 0.508448 sequence_distance= 0.000000 train_accuracy= 1.000000
+step:12300 learning_rate= 0.006872 ctc_loss= 0.091188 sequence_distance= 0.000000 train_accuracy= 1.000000
+step:12400 learning_rate= 0.006872 ctc_loss= 0.908169 sequence_distance= 0.045387 train_accuracy= 0.975446
+step:12500 learning_rate= 0.006872 ctc_loss= 0.025830 sequence_distance= 0.000000 train_accuracy= 1.000000
+step:12600 learning_rate= 0.006872 ctc_loss= 0.090549 sequence_distance= 0.000000 train_accuracy= 1.000000
+step:12700 learning_rate= 0.006872 ctc_loss= 0.517599 sequence_distance= 0.015625 train_accuracy= 0.984375
+step:12800 learning_rate= 0.006872 ctc_loss= 0.314074 sequence_distance= 0.012500 train_accuracy= 0.987500
+step:12900 learning_rate= 0.006872 ctc_loss= 0.510299 sequence_distance= 0.012500 train_accuracy= 0.987500
+step:13000 learning_rate= 0.006872 ctc_loss= 0.485493 sequence_distance= 0.020833 train_accuracy= 0.979167
+step:13100 learning_rate= 0.005498 ctc_loss= 0.666077 sequence_distance= 0.031250 train_accuracy= 0.968750
+step:13200 learning_rate= 0.005498 ctc_loss= 0.103138 sequence_distance= 0.000000 train_accuracy= 1.000000
+step:13300 learning_rate= 0.005498 ctc_loss= 0.154428 sequence_distance= 0.031250 train_accuracy= 0.968750
+step:13400 learning_rate= 0.005498 ctc_loss= 0.294397 sequence_distance= 0.018182 train_accuracy= 0.981818
+step:13500 learning_rate= 0.005498 ctc_loss= 0.423079 sequence_distance= 0.015625 train_accuracy= 0.984375
+step:13600 learning_rate= 0.005498 ctc_loss= 0.095656 sequence_distance= 0.012500 train_accuracy= 0.987500
+step:13700 learning_rate= 0.005498 ctc_loss= 0.513470 sequence_distance= 0.014062 train_accuracy= 0.979688
+step:13800 learning_rate= 0.005498 ctc_loss= 0.246538 sequence_distance= 0.008929 train_accuracy= 0.991071
+step:13900 learning_rate= 0.005498 ctc_loss= 0.309835 sequence_distance= 0.020833 train_accuracy= 0.979167
+step:14000 learning_rate= 0.005498 ctc_loss= 0.413124 sequence_distance= 0.019345 train_accuracy= 0.980655
+step:14100 learning_rate= 0.004398 ctc_loss= 0.398820 sequence_distance= 0.010417 train_accuracy= 0.989583
+step:14200 learning_rate= 0.004398 ctc_loss= 0.332814 sequence_distance= 0.009615 train_accuracy= 0.990385
+step:14300 learning_rate= 0.004398 ctc_loss= 0.018511 sequence_distance= 0.000000 train_accuracy= 1.000000
+step:14400 learning_rate= 0.004398 ctc_loss= 0.210897 sequence_distance= 0.062500 train_accuracy= 0.937500
+step:14500 learning_rate= 0.004398 ctc_loss= 0.233364 sequence_distance= 0.006250 train_accuracy= 0.993750
+step:14600 learning_rate= 0.004398 ctc_loss= 0.061443 sequence_distance= 0.000000 train_accuracy= 1.000000
+step:14700 learning_rate= 0.004398 ctc_loss= 0.309126 sequence_distance= 0.062500 train_accuracy= 0.937500
+step:14800 learning_rate= 0.004398 ctc_loss= 0.416869 sequence_distance= 0.015625 train_accuracy= 0.984375
+step:14900 learning_rate= 0.004398 ctc_loss= 0.064206 sequence_distance= 0.000000 train_accuracy= 1.000000
+step:15000 learning_rate= 0.004398 ctc_loss= 0.310022 sequence_distance= 0.000000 train_accuracy= 1.000000
+step:15100 learning_rate= 0.003518 ctc_loss= 0.671600 sequence_distance= 0.020833 train_accuracy= 0.968750
+step:15200 learning_rate= 0.003518 ctc_loss= 0.730255 sequence_distance= 0.015625 train_accuracy= 0.984375
+step:15300 learning_rate= 0.003518 ctc_loss= 0.101960 sequence_distance= 0.015625 train_accuracy= 0.984375
+step:15400 learning_rate= 0.003518 ctc_loss= 0.071113 sequence_distance= 0.000000 train_accuracy= 1.000000
+step:15500 learning_rate= 0.003518 ctc_loss= 0.478300 sequence_distance= 0.015625 train_accuracy= 0.984375
+step:15600 learning_rate= 0.003518 ctc_loss= 0.447939 sequence_distance= 0.028125 train_accuracy= 0.971875
+step:15700 learning_rate= 0.003518 ctc_loss= 0.348787 sequence_distance= 0.040179 train_accuracy= 0.959821
+step:15800 learning_rate= 0.003518 ctc_loss= 0.011890 sequence_distance= 0.000000 train_accuracy= 1.000000
+step:15900 learning_rate= 0.003518 ctc_loss= 0.625224 sequence_distance= 0.031250 train_accuracy= 0.968750
+step:16000 learning_rate= 0.003518 ctc_loss= 0.083991 sequence_distance= 0.000000 train_accuracy= 1.000000
+step:16100 learning_rate= 0.002815 ctc_loss= 0.207581 sequence_distance= 0.015625 train_accuracy= 0.984375
+step:16200 learning_rate= 0.002815 ctc_loss= 0.393335 sequence_distance= 0.018182 train_accuracy= 0.981818
+step:16300 learning_rate= 0.002815 ctc_loss= 0.366512 sequence_distance= 0.015625 train_accuracy= 0.984375
+step:16400 learning_rate= 0.002815 ctc_loss= 0.084544 sequence_distance= 0.000000 train_accuracy= 1.000000
+step:16500 learning_rate= 0.002815 ctc_loss= 0.430708 sequence_distance= 0.070312 train_accuracy= 0.929688
+step:16600 learning_rate= 0.002815 ctc_loss= 0.374814 sequence_distance= 0.008929 train_accuracy= 0.991071
+step:16700 learning_rate= 0.002815 ctc_loss= 0.161657 sequence_distance= 0.000000 train_accuracy= 1.000000
+step:16800 learning_rate= 0.002815 ctc_loss= 0.574963 sequence_distance= 0.008929 train_accuracy= 0.991071
+step:16900 learning_rate= 0.002815 ctc_loss= 0.492591 sequence_distance= 0.010417 train_accuracy= 0.989583
+step:17000 learning_rate= 0.002815 ctc_loss= 0.179627 sequence_distance= 0.004808 train_accuracy= 0.995192
+step:17100 learning_rate= 0.002252 ctc_loss= 0.435249 sequence_distance= 0.017857 train_accuracy= 0.982143
+step:17200 learning_rate= 0.002252 ctc_loss= 0.586806 sequence_distance= 0.071429 train_accuracy= 0.928571
+step:17300 learning_rate= 0.002252 ctc_loss= 0.013686 sequence_distance= 0.000000 train_accuracy= 1.000000
+step:17400 learning_rate= 0.002252 ctc_loss= 0.330980 sequence_distance= 0.007812 train_accuracy= 0.992188
+step:17500 learning_rate= 0.002252 ctc_loss= 0.243710 sequence_distance= 0.000000 train_accuracy= 1.000000
+step:17600 learning_rate= 0.002252 ctc_loss= 0.416253 sequence_distance= 0.000000 train_accuracy= 1.000000
+step:17700 learning_rate= 0.002252 ctc_loss= 0.026169 sequence_distance= 0.000000 train_accuracy= 1.000000
+step:17800 learning_rate= 0.002252 ctc_loss= 0.091190 sequence_distance= 0.000000 train_accuracy= 1.000000
+step:17900 learning_rate= 0.002252 ctc_loss= 1.020189 sequence_distance= 0.027778 train_accuracy= 0.961806
+step:18000 learning_rate= 0.002252 ctc_loss= 0.819196 sequence_distance= 0.028125 train_accuracy= 0.971875
+step:18100 learning_rate= 0.001801 ctc_loss= 0.092899 sequence_distance= 0.000000 train_accuracy= 1.000000
+step:18200 learning_rate= 0.001801 ctc_loss= 0.156433 sequence_distance= 0.000000 train_accuracy= 1.000000
+step:18300 learning_rate= 0.001801 ctc_loss= 0.719156 sequence_distance= 0.021307 train_accuracy= 0.978693
+step:18400 learning_rate= 0.001801 ctc_loss= 0.279783 sequence_distance= 0.015625 train_accuracy= 0.984375
+step:18500 learning_rate= 0.001801 ctc_loss= 0.339568 sequence_distance= 0.031250 train_accuracy= 0.968750
+step:18600 learning_rate= 0.001801 ctc_loss= 0.014291 sequence_distance= 0.000000 train_accuracy= 1.000000
+step:18700 learning_rate= 0.001801 ctc_loss= 0.353095 sequence_distance= 0.031250 train_accuracy= 0.968750
+step:18800 learning_rate= 0.001801 ctc_loss= 0.014401 sequence_distance= 0.000000 train_accuracy= 1.000000
+step:18900 learning_rate= 0.001801 ctc_loss= 0.202345 sequence_distance= 0.015625 train_accuracy= 0.984375
+step:19000 learning_rate= 0.001801 ctc_loss= 0.678403 sequence_distance= 0.000000 train_accuracy= 1.000000
+step:19100 learning_rate= 0.001441 ctc_loss= 0.122544 sequence_distance= 0.005682 train_accuracy= 0.994318
+step:19200 learning_rate= 0.001441 ctc_loss= 0.184841 sequence_distance= 0.000000 train_accuracy= 1.000000
+step:19300 learning_rate= 0.001441 ctc_loss= 0.199133 sequence_distance= 0.062500 train_accuracy= 0.937500
+step:19400 learning_rate= 0.001441 ctc_loss= 0.365651 sequence_distance= 0.008929 train_accuracy= 0.991071
+step:19500 learning_rate= 0.001441 ctc_loss= 0.156111 sequence_distance= 0.000000 train_accuracy= 1.000000
+step:19600 learning_rate= 0.001441 ctc_loss= 0.213693 sequence_distance= 0.000000 train_accuracy= 1.000000
+step:19700 learning_rate= 0.001441 ctc_loss= 0.479992 sequence_distance= 0.010417 train_accuracy= 0.989583
+step:19800 learning_rate= 0.001441 ctc_loss= 0.180590 sequence_distance= 0.004808 train_accuracy= 0.995192
+step:19900 learning_rate= 0.001441 ctc_loss= 0.437260 sequence_distance= 0.017857 train_accuracy= 0.982143
+step:20000 learning_rate= 0.001441 ctc_loss= 0.579786 sequence_distance= 0.015873 train_accuracy= 0.984127

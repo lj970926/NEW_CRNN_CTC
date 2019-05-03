@@ -1,5 +1,5 @@
 '''
-the crnn_ctc model implemented by tensorflow
+the crnn_ctc mode implemented by tensorflow
 author by lijin
 '''
 
@@ -12,7 +12,7 @@ BATCH_DECAY = 0.999
 
 
 class CRNNModel(object):
-    def __init__(self, hidden_num, layer_num, class_num):
+    def __init__(self, hidden_num, layer_num, class_num, phase):
         '''
         get feature from the initial picture
         the h dimension of the pictuure must be 32
@@ -23,6 +23,7 @@ class CRNNModel(object):
         self.hidden_num = hidden_num
         self.layer_num = layer_num
         self.class_num = class_num
+        self.phase = phase
 
     def get_feature_map(self, X):
         '''
@@ -30,23 +31,23 @@ class CRNNModel(object):
         :param X: the input tensor
         :return: a feature map that has two dimension
         '''
-        with slim.arg_scope([slim.conv2d], padding='SAME',
+        is_training = True if self.phase == 'train' else False
+        with slim.arg_scope([slim.conv2d],
                             weights_initializer=tf.truncated_normal_initializer(stddev=0.01),
                             weights_regularizer=slim.l2_regularizer(0.0005),
-                            activation_fn=tf.nn.relu):
+                            biases_initializer=None):
             net = slim.repeat(X, 2, slim.conv2d, 64, kernel_size=3, stride=1, scope='conv1')
             net = slim.max_pool2d(net, kernel_size=2, stride=2, scope='pool1')
             net = slim.repeat(net, 2, slim.conv2d, 128, kernel_size=3, stride=1, scope='conv2')
             net = slim.max_pool2d(net, kernel_size=2, stride=2, scope='pool2')
             net = slim.repeat(net, 2, slim.conv2d, 256, kernel_size=3, stride=1, scope='conv3')
-            net = slim.repeat(net, 2, slim.conv2d, 256, kernel_size=3, stride=1, scope='conv4')
             net = slim.max_pool2d(net, [2, 1], stride=[2, 1], scope='pool3')
-            net = slim.repeat(net, 2, slim.conv2d, 512, kernel_size=3, stride=1, scope='conv5')
-            net = slim.batch_norm(net, decay=BATCH_DECAY, is_training=True, scope='bn1')
-            net = slim.conv2d(net, 512, kernel_size=3, stride=1, scope='conv6')
-            net = slim.batch_norm(net, decay=BATCH_DECAY, is_training=True, scope='bn2')
+            net = slim.repeat(net, 2, slim.conv2d, 512, kernel_size=3, stride=1, scope='conv4')
+            net = slim.batch_norm(net, decay=BATCH_DECAY, is_training=is_training, scope='bn1')
+            net = slim.conv2d(net, 512, kernel_size=3, stride=1, scope='conv5')
+            net = slim.batch_norm(net, decay=BATCH_DECAY, is_training=is_training, scope='bn2')
             net = slim.max_pool2d(net, kernel_size=[2, 1], stride=[2, 1], scope='pool5')
-            net = slim.conv2d(net, 512, padding="VALID", kernel_size=[2, 1], stride=1, scope='conv7')
+            net = slim.conv2d(net, 512, padding="VALID", kernel_size=[2, 1], stride=1, scope='conv6')
         return net
 
     def map_to_sequence(self, featuremap):
@@ -65,12 +66,39 @@ class CRNNModel(object):
             bw_cell_list = [rnn.BasicLSTMCell(i, forget_bias=1.0) for i in [self.hidden_num] * self.layer_num]
             lstm_output, _, _ = rnn.stack_bidirectional_dynamic_rnn(fw_cell_list, bw_cell_list, sequence,
                                                                     sequence_length=sequence_length, dtype=tf.float32)
-            batch_size, _, hidden_num = sequence.get_shape().as_list()
+            [batch_size, _, hidden_num] = sequence.get_shape().as_list()
             reshaped_output = tf.reshape(lstm_output, [-1, hidden_num])
 
             W = tf.Variable(tf.truncated_normal([hidden_num, self.class_num], stddev=0.01), name='weight')
-            pre_result = tf.matmul(reshaped_output, W)
-            pre_result = tf.reshape(pre_result, [batch_size, -1, self.class_num])
-            pre_result = tf.nn.softmax(pre_result)
-            raw_predict = tf.argmax(pre_result, axis=2)
-            return raw_predict
+            logits = tf.matmul(reshaped_output, W)
+            logits = tf.reshape(logits, [batch_size, -1, self.class_num])
+            pre_result = tf.nn.softmax(logits)
+            raw_predict = tf.argmax(pre_result, axis=2, name='raw_prediction')
+            rnn_out = tf.transpose(logits, (1, 0, 2), name='transpose_time_major')
+            return rnn_out, raw_predict
+
+    def build_network(self, images, sequence_length=None):
+        # first apply the cnn feature extraction stage
+        cnn_out = self.get_feature_map(images)
+        # second apply the map to sequence stage
+        sequence = self.map_to_sequence(featuremap=cnn_out)
+        # third apply the sequence label stage
+        net_out, raw_pred = self.ctc_predict(sequence=sequence, sequence_length=sequence_length)
+        return net_out
+
+
+#imgs = tf.Variable(tf.zeros((16,32,134,3)))
+#initialier = tf.global_variables_initializer()
+#vinitializer = tf.local_variables_initializer()
+#c = CRNNModel(hidden_num=256, layer_num=2, class_num=73, phase='train')
+#et_out = c.get_feature_map(imgs)
+#with tf.Session() as sess:
+   # sess.run(initialier)
+   # sess.run(vinitializer)
+  #  out = sess.run(imgs)
+    #net_ = sess.run(net_out)
+   # print(out.shape)
+  #  print(net_out.get_shape().as_list)
+
+
+#c.build_network()

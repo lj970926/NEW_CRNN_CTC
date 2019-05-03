@@ -5,7 +5,7 @@ import os
 import random
 import sys
 
-pro_dir = '/home/lijin/PycharmProject/CRNN_CTC/'
+pro_dir = '/home/lijin/PycharmProjects/CRNN_CTC/'
 label_dir = pro_dir + '/json/label.json'
 map_dir = pro_dir + '/json/char_map.json'
 data_dir = pro_dir + 'data'
@@ -17,46 +17,50 @@ validation_split_fraction = 0.1
 def _int64_feature(value):
     if not isinstance(value, list):
         value = [value]
-    return tf.train.Feature(tf.train.Int64List(value))
+    return tf.train.Feature(int64_list=tf.train.Int64List(value=value))
 
 
 def _bytes_feature(value):
     if not isinstance(value, list):
         value = [value]
-    return tf.train.Feature(tf.train.BytesList(value))
+    return tf.train.Feature(bytes_list=tf.train.BytesList(value=value))
 
 
 def _label_to_string(label):
+    label = label.lower()
     with open(map_dir, 'r') as f:
         map_dict = json.load(f)
         int_list = []
         for c in label:
-            map_dict[c] = len(map_dict)
             int_list.append(map_dict[c])
 
     return int_list
 
 
 def _write_tfrecord(record_name, file_name_list):
-    with tf.python_io.TFRecordWriter(pro_dir) as writer:
+    with tf.python_io.TFRecordWriter(pro_dir + 'tfrecord/' + record_name + '.tfrecord') as writer:
         f = open(label_dir, 'r')
         label_dict = json.load(f)
         for name in file_name_list:
             image_path = data_dir + '/' + name
             image = cv2.imread(image_path)
             label = label_dict[name]
+            if not len(label) >0:
+                continue
             if image is None:
                 continue
             h, w, c = image.shape
             width = int(w * img_height / h)
-            cv2.resize(image, (width, img_height))
+            if not width > 0:
+                continue
+            image = cv2.resize(image, (width, img_height))
             is_success, image_buffer = cv2.imencode('.jpg', image)
             if not is_success:
                 continue
             features = tf.train.Features(feature={
                 'label': _int64_feature(_label_to_string(label)),
                 'images': _bytes_feature(image_buffer.tostring()),
-                'imgname': _bytes_feature(name)
+                'imgname': _bytes_feature(name.encode(encoding='utf-8'))
             })
             example = tf.train.Example(features=features)
             writer.write(example.SerializeToString())
@@ -76,3 +80,7 @@ def genetate_tfrecord():
                    'validation': file_name_list[split_index:]}
     for name in ['train', 'validation']:
         _write_tfrecord(name, data_divide[name])
+
+
+if __name__ == '__main__':
+    genetate_tfrecord()
