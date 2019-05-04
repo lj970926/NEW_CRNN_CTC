@@ -11,7 +11,7 @@ label_dir = pro_dir + '/json/label.json'
 map_dir = pro_dir + '/json/char_map.json'
 data_dir = pro_dir + 'data'
 tfrecord_path = pro_dir + 'tfrecord/train.tfrecord'
-mod_dir = pro_dir + 'trained_model/'
+mod_dir = pro_dir + 'logs/'
 
 # some hyperprarameters
 batch_size = 16
@@ -27,6 +27,12 @@ per_eval = 100
 
 
 def sparse_matrix_to_list(sparse_matrix, char_map_dict=None):
+    '''
+    input an sparsetensor,converse it to a list that contains strings of each picture in a batch
+    :param sparse_matrix: a sparseTensor instance
+    :param char_map_dict: map an int value to a char value
+    :return: a list that contains strings for each line
+    '''
     indices = sparse_matrix.indices
     values = sparse_matrix.values
     dense_shape = sparse_matrix.dense_shape
@@ -46,6 +52,12 @@ def sparse_matrix_to_list(sparse_matrix, char_map_dict=None):
 
 
 def int_to_string(value, char_map_dict=None):
+    '''
+    given a char value return the int value relevanted to it
+    :param value:
+    :param char_map_dict:
+    :return:
+    '''
     if char_map_dict is None:
         json.load(open(map_dir, 'r'))
     assert (isinstance(char_map_dict, dict) and 'char_map_dict is not a dict')
@@ -59,6 +71,12 @@ def int_to_string(value, char_map_dict=None):
 
 
 def read_tfrecord(path, num_epochs=None):
+    '''
+    read images labels
+    :param path:
+    :param num_epochs:
+    :return:
+    '''
     if not os.path.exists(path):
         raise ValueError("failed to find tfrecord file in:{:s}".format(path))
 
@@ -114,7 +132,7 @@ def train_model():
     # set tf summary
 
     tf.summary.scalar(name='CTC_Loss', tensor=ctc_loss)
-    tf.summary.scalar(name='Learning_Rate', tensor=learning_rate)
+    tf.summary.scalar(name='Learning_Rate', tensor=learn_rate)
     tf.summary.scalar(name='Seqence_Distance', tensor=sequence_distance)
     merge_summary_op = tf.summary.merge_all()
 
@@ -122,7 +140,7 @@ def train_model():
     saver = tf.train.Saver()
     train_start_time = time.strftime('%Y-%m-%d-%H-%M-%S', time.localtime(time.time()))
     model_name = 'crnn_ctc_ocr_{:s}.ckpt'.format(str(train_start_time))
-    model_path = mod_dir + model_name
+    model_path = pro_dir + 'ckpt/' + model_name
     sess_config = tf.ConfigProto()
     sess_config.gpu_options.allow_growth = True
     with tf.Session(config=sess_config) as sess:
